@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Arkadia/vendor/spdlog/include"
             ],
             "defines": [
                 "_DEBUG",

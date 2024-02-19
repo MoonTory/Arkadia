@@ -11,7 +11,8 @@ project "App"
    {
       "src",
 
-	  "../Arkadia/src"
+	  "../Arkadia/src",
+      "../Arkadia/vendor/spdlog/include",
    }
 
    links

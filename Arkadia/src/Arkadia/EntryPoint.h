@@ -2,11 +2,13 @@
 
 #ifdef ARK_PLATFORM_WINDOWS
 
-extern Ark::Application *Ark::CreateApplication();
+extern Arkadia::Application *Arkadia::CreateApplication();
 
 int main(int argc, char **argv)
 {
-    auto app = Ark::CreateApplication();
+    Arkadia::Log::Init();
+
+    auto app = Arkadia::CreateApplication();
 
     app->Run();
 

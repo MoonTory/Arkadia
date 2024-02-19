@@ -9,7 +9,8 @@ project "Arkadia"
 
    includedirs
    {
-      "src"
+      "src",
+      "vendor/spdlog/include",
    }
 
    targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")

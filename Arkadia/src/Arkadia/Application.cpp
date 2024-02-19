@@ -1,6 +1,6 @@
 #include "Application.h"
 
-namespace Ark
+namespace Arkadia
 {
 
     Application::Application() {}

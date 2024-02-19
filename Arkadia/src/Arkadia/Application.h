@@ -2,7 +2,7 @@
 
 #include "Arkadia/Core.h"
 
-namespace Ark
+namespace Arkadia
 {
 
     class ARK_API Application

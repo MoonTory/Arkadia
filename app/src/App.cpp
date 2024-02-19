@@ -1,7 +1,7 @@
 #include "Arkadia.h"
 #include <iostream>
 
-class Sandbox : public Ark::Application
+class Sandbox : public Arkadia::Application
 {
 public:
 	Sandbox()
@@ -13,7 +13,7 @@ public:
 	~Sandbox() {}
 };
 
-namespace Ark
+namespace Arkadia
 {
 
 	Application *CreateApplication()
