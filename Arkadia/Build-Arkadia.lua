@@ -1,8 +1,8 @@
 project "Arkadia"
-   kind "StaticLib"
+   kind "SharedLib"
    language "C++"
    cppdialect "C++20"
-   targetdir "Binaries/%{cfg.buildcfg}"
+   targetdir "bin/%{cfg.buildcfg}"
    staticruntime "off"
 
    files { "src/**.h", "src/**.cpp" }
@@ -17,8 +17,8 @@ project "Arkadia"
 
    filter "system:windows"
        systemversion "latest"
-       defines { }
-
+       defines { "ARK_PLATFORM_WINDOWS", "ARK_BUILD_DLL" }
+       
    filter "configurations:Debug"
        defines { "DEBUG" }
        runtime "Debug"

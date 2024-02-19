@@ -2,7 +2,7 @@ project "App"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++20"
-   targetdir "Binaries/%{cfg.buildcfg}"
+   targetdir "bin/%{cfg.buildcfg}"
    staticruntime "off"
 
    files { "src/**.h", "src/**.cpp" }
@@ -11,7 +11,6 @@ project "App"
    {
       "src",
 
-	  -- Include Core
 	  "../Arkadia/src"
    }
 
@@ -25,7 +24,8 @@ project "App"
 
    filter "system:windows"
        systemversion "latest"
-       defines { "WINDOWS" }
+       defines { "ARK_PLATFORM_WINDOWS", "WINDOWS" }
+
 
    filter "configurations:Debug"
        defines { "DEBUG" }
