@@ -1,5 +1,4 @@
 #include "Arkadia.h"
-
 #include <iostream>
 
 class Sandbox : public Ark::Application
@@ -14,10 +13,11 @@ public:
 	~Sandbox() {}
 };
 
-int main()
+namespace Ark
 {
-	auto app = new Sandbox();
-	app->Run();
 
-	return 0;
+	Application *CreateApplication()
+	{
+		return new Sandbox();
+	}
 }

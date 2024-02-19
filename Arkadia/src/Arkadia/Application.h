@@ -14,4 +14,6 @@ namespace Ark
         void Run();
     };
 
+    Application *CreateApplication();
+
 }
