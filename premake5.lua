@@ -10,8 +10,17 @@ workspace "Arkadia"
 
 OutputDir = "%{cfg.system}-%{cfg.architecture}/%{cfg.buildcfg}"
 
-group "Arkadia"
-	include "Arkadia/Build-Arkadia.lua"
+IncludeDir = {}
+IncludeDir["GLFW"] = "%{wks.location}/Arkadia/vendor/GLFW/include"
+
+LibraryDir = {}
+LibraryDir["GLFW"] = ("%{wks.location}/Arkadia/vendor/GLFW/lib")
+
+
 group ""
 
-include "App/Build-App.lua"
+group "Arkadia"
+	include "Arkadia/premake5.lua"
+group ""
+
+include "App/premake5.lua"

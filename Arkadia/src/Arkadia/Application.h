@@ -11,7 +11,7 @@ namespace Arkadia
         Application();
         virtual ~Application();
 
-        void Run();
+        int Run();
     };
 
     Application *CreateApplication();

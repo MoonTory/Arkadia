@@ -4,11 +4,7 @@
 class Sandbox : public Arkadia::Application
 {
 public:
-	Sandbox()
-	{
-		std::cout << "Hello World!\n";
-		std::cin.get();
-	}
+	Sandbox() {}
 
 	~Sandbox() {}
 };
