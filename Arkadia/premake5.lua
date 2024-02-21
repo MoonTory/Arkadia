@@ -27,19 +27,22 @@ project "Arkadia"
         "src",
 
         "vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
     }
 
     libdirs
     {
-        "%{LibraryDir.GLFW}"
+        "%{LibraryDir.GLFW}",
+        "%{LibraryDir.Glad}",
     }
 
     links
     {
         "glfw3",
+        "Glad",
         "OpenGL32",
-        "gdi32",
+        "gdi32"
     }
 
     filter "system:windows"
