@@ -4,9 +4,9 @@
 
 #include "Log.h"
 
-extern Arkadia::Application *Arkadia::CreateApplication();
+extern Arkadia::Application* Arkadia::CreateApplication();
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     Arkadia::Log::Init();
 

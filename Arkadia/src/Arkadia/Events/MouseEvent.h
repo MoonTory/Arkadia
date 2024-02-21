@@ -22,8 +22,8 @@ namespace Arkadia
             return ss.str();
         }
 
-        EVENT_CLASS_TYPE(MouseMoved)
-        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+        EVENT_CLASS_TYPE(MouseMoved);
+        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput);
     private:
         float m_MouseX, m_MouseY;
     };
@@ -44,8 +44,8 @@ namespace Arkadia
             return ss.str();
         }
 
-        EVENT_CLASS_TYPE(MouseScrolled)
-        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+        EVENT_CLASS_TYPE(MouseScrolled);
+        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput);
     private:
         float m_XOffset, m_YOffset;
     };
@@ -55,7 +55,7 @@ namespace Arkadia
     public:
         MouseCode GetMouseButton() const { return m_Button; }
 
-        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput | EventCategoryMouseButton)
+        EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput | EventCategoryMouseButton);
     protected:
         MouseButtonEvent(const MouseCode button)
             : m_Button(button) {}
@@ -76,7 +76,7 @@ namespace Arkadia
             return ss.str();
         }
 
-        EVENT_CLASS_TYPE(MouseButtonPressed)
+        EVENT_CLASS_TYPE(MouseButtonPressed);
     };
 
     class MouseButtonReleasedEvent : public MouseButtonEvent
@@ -92,7 +92,7 @@ namespace Arkadia
             return ss.str();
         }
 
-        EVENT_CLASS_TYPE(MouseButtonReleased)
+        EVENT_CLASS_TYPE(MouseButtonReleased);
     };
 
 }
