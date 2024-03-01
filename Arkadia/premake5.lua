@@ -29,18 +29,21 @@ project "Arkadia"
         "vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}",
     }
 
     libdirs
     {
         "%{LibraryDir.GLFW}",
         "%{LibraryDir.Glad}",
+        "%{LibraryDir.ImGui}",
     }
 
     links
     {
         "glfw3",
         "Glad",
+        "ImGui",
         "OpenGL32",
         "gdi32"
     }
