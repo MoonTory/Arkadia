@@ -12,6 +12,7 @@ node_modules/
 *.sln
 *.log
 *.lock
+*.ini
 Makefile
 
 # Exclude
