@@ -1,6 +1,3 @@
 [submodule "Arkadia/vendor/spdlog"]
 	path = Arkadia/vendor/spdlog
 	url = https://github.com/gabime/spdlog
-[submodule "Arkadia/vendor/imgui"]
-	path = Arkadia/vendor/imgui
-	url = https://github.com/MoonTory/imgui
