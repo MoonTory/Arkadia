@@ -24,7 +24,7 @@ namespace Arkadia
         void SetVSync(bool enabled) override;
         bool IsVSync() const override;
 
-        virtual void* GetNativeWindow() const { return m_Window; }
+        inline virtual void* GetNativeWindow() const { return m_Window; }
 
     private:
         virtual void Init(const WindowProps& props);

@@ -18,8 +18,7 @@ namespace Arkadia
                     unsigned int width = 1280,
                     unsigned int height = 720)
             : Title(title), Width(width), Height(height)
-        {
-        }
+        {}
     };
 
     // Interface representing a desktop system based Window

@@ -4,6 +4,7 @@
 
 #include "Arkadia/Window.h"
 #include "Arkadia/Core/LayerStack.h"
+#include "Arkadia/ImGui/ImGuiLayer.h"
 
 #include "Arkadia/Events/Event.h"
 #include "Arkadia/Events/KeyEvent.h"
@@ -38,12 +39,13 @@ namespace Arkadia
         bool OnKeyPressed(KeyPressedEvent& e);
         bool OnWindowClose(WindowCloseEvent& e);
         bool OnWindowResize(WindowResizeEvent& e);
-        std::unique_ptr<Window> m_Window;
-        bool m_Running = true;
 
         unsigned int m_PolyMode = 0x1B02;
 
+        bool m_Running = true;
         LayerStack m_LayerStack;
+        ImGuiLayer* m_ImGuiLayer;
+        std::unique_ptr<Window> m_Window;
 
         std::shared_ptr<Shader> m_Shader;
         std::shared_ptr<VertexArray> m_VertexArray;

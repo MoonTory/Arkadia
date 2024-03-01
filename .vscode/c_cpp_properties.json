@@ -12,7 +12,8 @@
                 "UNICODE",
                 "_UNICODE",
                 "ARK_PLATFORM_WINDOWS",
-                "ARK_BUILD_DLL"
+                "ARK_BUILD_DLL",
+                "IMGUI_IMPL_OPENGL_LOADER_CUSTOM"
             ],
             "windowsSdkVersion": "10.0.22621.0",
             "compilerPath": "C:/mingw64/bin/g++.exe",
