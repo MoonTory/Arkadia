@@ -2,7 +2,7 @@ project "App"
     kind "ConsoleApp"
     language "C++"
     cppdialect "C++20"
-    staticruntime "off"
+    staticruntime "on"
 
     targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")
     objdir ("../bin-int/" .. OutputDir .. "/%{prj.name}")
@@ -18,12 +18,26 @@ project "App"
         "src",
 
         "../Arkadia/src",
-        "../Arkadia/vendor/spdlog/include",
+        "../Arkadia/vendor",
+        "%{IncludeDir.SpdLog}",
+    }
+
+    libdirs
+    {
+        "%{LibraryDir.Arkadia}",
+        "%{LibraryDir.GLFW}",
+        "%{LibraryDir.Glad}",
+        "%{LibraryDir.ImGui}",
     }
 
     links
     {
         "Arkadia",
+        "glfw3",
+        "Glad",
+        "ImGui",
+        "OpenGL32",
+        "gdi32"
     }
 
     filter "system:windows"

@@ -20,6 +20,7 @@ LibraryDir = {}
 LibraryDir["GLFW"] = ("%{wks.location}/Arkadia/vendor/GLFW/lib")
 LibraryDir["Glad"] = ("%{wks.location}/Arkadia/vendor/Glad/bin".. OutputDir .. "/Glad")
 LibraryDir["ImGui"] = ("%{wks.location}/Arkadia/vendor/imgui/bin".. OutputDir .. "/ImGui")
+LibraryDir["Arkadia"] = ("%{wks.location}/bin".. OutputDir .. "/Arkadia")
 
 include "Arkadia/vendor/Glad/premake5.lua"
 include "Arkadia/vendor/imgui/premake5.lua"

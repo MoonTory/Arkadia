@@ -1,8 +1,8 @@
 project "Arkadia"
-    kind "SharedLib"
+    kind "StaticLib"
     language "C++"
     cppdialect "C++20"
-    staticruntime "off"
+    staticruntime "on"
 
     targetdir("../bin/" .. OutputDir .. "/%{prj.name}")
     objdir("../bin-int/" .. OutputDir .. "/%{prj.name}")
@@ -26,7 +26,7 @@ project "Arkadia"
     {
         "src",
 
-        "vendor/spdlog/include",
+        "%{IncludeDir.SpdLog}",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
         "%{IncludeDir.ImGui}",
